@@ -19,7 +19,9 @@ repositories {
 }
 
 bootJar {
-    launchScript()
+    archiveBaseName ='-'
+    archiveFileName ='-.jar'
+    archiveVersion ="0.0.0"
 }
 
 
