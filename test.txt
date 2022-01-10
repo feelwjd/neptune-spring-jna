@@ -78,3 +78,19 @@
 [INFO ] 09:38:10.236 c.e.springproject.TestController - 5.343237290762231E12
 [INFO ] 10:23:18.050 c.e.springproject.TestController - 5.3.14
 [INFO ] 10:23:18.052 c.e.springproject.TestController - 5.343237290762231E12
+[INFO ] 16:13:19.875 c.e.s.SpringProjectApplication - Starting SpringProjectApplication using Java 17.0.1 on DESKTOP-1SC93PA with PID 4248 (C:\Users\HT1\IdeaProjects\spring-project\build\classes\java\main started by HT1 in C:\Users\HT1\IdeaProjects\spring-project)
+[INFO ] 16:13:19.880 c.e.s.SpringProjectApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:13:21.188 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 16:13:21.201 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 16:13:21.202 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:13:21.202 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 16:13:21.314 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:13:21.315 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1371 ms
+[INFO ] 16:13:21.802 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 16:13:21.857 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 16:13:21.874 c.e.s.SpringProjectApplication - Started SpringProjectApplication in 2.784 seconds (JVM running for 4.087)
+[INFO ] 16:13:25.010 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 16:13:25.011 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 16:13:25.014 o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 16:13:25.044 c.e.springproject.TestController - 5.3.14
+[INFO ] 16:13:25.189 c.e.springproject.TestController - 5.343237290762231E12
