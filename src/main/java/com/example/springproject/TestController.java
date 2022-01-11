@@ -35,8 +35,7 @@ public class TestController {
         if(shared_memory==minus.getPointer()){
             logger.info("shmat attach is failed");
         }
-        CStuc shm_info = new CStuc();
-        shm_info.useMemory(shared_memory);
+
         return result;
     }
 
