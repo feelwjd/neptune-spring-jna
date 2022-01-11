@@ -1,16 +1,11 @@
-[INFO ] 12:43:56.704 c.e.s.SpringProjectApplication - Starting SpringProjectApplication using Java 17.0.1 on DESKTOP-1SC93PA with PID 5940 (C:\Users\HT1\IdeaProjects\spring-project\build\classes\java\main started by HT1 in C:\Users\HT1\IdeaProjects\spring-project)
-[INFO ] 12:43:56.710 c.e.s.SpringProjectApplication - No active profile set, falling back to default profiles: default
-[INFO ] 12:43:58.932 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 12:43:58.964 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-[INFO ] 12:43:58.965 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 12:43:58.965 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-[INFO ] 12:43:59.098 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 12:43:59.098 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2247 ms
-[INFO ] 12:43:59.773 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-[INFO ] 12:43:59.833 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 12:43:59.848 c.e.s.SpringProjectApplication - Started SpringProjectApplication in 4.491 seconds (JVM running for 8.999)
-[INFO ] 12:44:17.220 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 12:44:17.221 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 12:44:17.222 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 12:44:17.275 c.e.springproject.TestController - 5.3.14
-[INFO ] 12:44:17.650 c.e.springproject.TestController - 5.343237290762231E12
+[INFO ] 16:47:02.324 c.e.s.SpringProjectApplication - Starting SpringProjectApplication using Java 17.0.1 on DESKTOP-1SC93PA with PID 11280 (C:\Users\HT1\IdeaProjects\spring-project\build\classes\java\main started by HT1 in C:\Users\HT1\IdeaProjects\spring-project)
+[INFO ] 16:47:02.330 c.e.s.SpringProjectApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:47:04.072 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 16:47:04.087 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 16:47:04.088 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:47:04.089 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 16:47:04.201 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:47:04.201 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1745 ms
+[INFO ] 16:47:04.966 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 16:47:05.029 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 16:47:05.047 c.e.s.SpringProjectApplication - Started SpringProjectApplication in 4.035 seconds (JVM running for 6.19)

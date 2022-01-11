@@ -20,7 +20,7 @@ public class TestController {
     private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @RequestMapping("/")
-    public double test() {
+    public String test() {
         String test = org.springframework.core.SpringVersion.getVersion();
         logger.info(test);
         CMath lib = Native.load(Platform.isWindows()?"msvcrt":"c",CMath.class);
@@ -39,8 +39,9 @@ public class TestController {
             logger.info("shmat attach is failed");
         }
         CStuc stuc = new CStuc();
-        List<CStuc> cs = new ArrayList<>(stuc.getFieldOrder());
-        return cs.indexOf(1);
+        String resume = stuc.getStr_ip();
+        logger.info(resume);
+        return resume;
     }
 
 }
