@@ -1,5 +1,6 @@
 package com.example.springproject;
 import com.sun.jna.*;
+import com.sun.jna.ptr.IntByReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,9 +31,13 @@ public class TestController {
         }
 
         Pointer shared_memory = ipc.shmat(shmid,Pointer.NULL,IPCLibrary.IPC_CREAT);
+        IntByReference minus = new IntByReference(-1);
+        if(shared_memory==minus.getPointer()){
+            logger.info("shmat attach is failed");
+        }
         CStuc shm_info = new CStuc();
-        long value = Memory.nativeValue(shared_memory);
-        return value;
+        shm_info.useMemory(shared_memory);
+        return result;
     }
 
 }
