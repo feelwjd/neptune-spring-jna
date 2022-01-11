@@ -42,7 +42,7 @@ public class TestController {
         CStuc stuc = new CStuc();
         //logger.info("step 3 : create structure");
         String resume = stuc.getStr_ip();
-        List list = stuc.getFieldOrder();
+        List<String> list = stuc.getFieldOrder();
         //logger.info("step 4");
         logger.info(String.valueOf(list));
         return list;

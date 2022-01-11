@@ -12,7 +12,7 @@ public class CStuc extends Structure {
     public int int_id;
 
     @Override
-    protected List getFieldOrder() {
+    protected List<String> getFieldOrder() {
         return Arrays.asList(new String[]{"str_ip","int_ip","int_id"});
     }
 
