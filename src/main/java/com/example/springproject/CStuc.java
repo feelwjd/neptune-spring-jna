@@ -27,4 +27,9 @@ public class CStuc extends Structure {
         super.useMemory(m);
         super.read();
     }
+
+    @Override
+    public Pointer getPointer() {
+        return super.getPointer();
+    }
 }

@@ -1,14 +1,13 @@
 package com.example.springproject;
-import com.sun.jna.NativeLibrary;
-import com.sun.jna.Pointer;
+import com.sun.jna.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.sun.jna.Native;
-import com.sun.jna.Platform;
 
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -23,10 +22,17 @@ public class TestController {
         CMath lib = Native.load(Platform.isWindows()?"msvcrt":"c",CMath.class);
         double result = lib.cosh(30);
         logger.info(Double.toString(result));
-        long peer = 1111;
-        Pointer s = new Pointer(peer);
-        String p = CLibrary.INSTANCE.shmat(3836,s,0);
-        return result;
+
+        IPCLibrary ipc = Native.load("c",IPCLibrary.class);
+        int shmid = ipc.shmget(3836,1440,IPCLibrary.IPC_CREAT);
+        if (shmid == -1 ){
+            logger.info("shmget failed");
+        }
+
+        Pointer shared_memory = ipc.shmat(shmid,Pointer.NULL,IPCLibrary.IPC_CREAT);
+        CStuc shm_info = new CStuc();
+        long value = Memory.nativeValue(shared_memory);
+        return value;
     }
 
 }
