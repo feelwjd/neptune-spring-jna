@@ -1,6 +1,7 @@
 package com.example.springproject;
 import com.sun.jna.*;
 import com.sun.jna.ptr.IntByReference;
+import lombok.EqualsAndHashCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -35,8 +38,9 @@ public class TestController {
         if(shared_memory==minus.getPointer()){
             logger.info("shmat attach is failed");
         }
-
-        return result;
+        CStuc stuc = new CStuc();
+        List<CStuc> cs = new ArrayList<>(stuc.getFieldOrder());
+        return cs.indexOf(1);
     }
 
 }
