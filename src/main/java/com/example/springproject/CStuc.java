@@ -36,4 +36,9 @@ public class CStuc extends Structure {
     public String getStr_ip(){
         return str_ip;
     }
+
+    public CStuc(Pointer p){
+        super(p);
+        read();
+    }
 }

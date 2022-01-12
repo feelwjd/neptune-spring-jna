@@ -39,7 +39,7 @@ public class TestController {
             logger.info("shmat attach is failed");
         }
         //logger.info("step 2 : shmat success");
-        CStuc stuc = new CStuc();
+        CStuc stuc = new CStuc(shared_memory);
         //logger.info("step 3 : create structure");
         String resume = stuc.getStr_ip();
         List<String> list = new ArrayList<>();
