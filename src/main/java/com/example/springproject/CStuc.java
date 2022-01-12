@@ -37,8 +37,4 @@ public class CStuc extends Structure {
         return str_ip;
     }
 
-    public CStuc(Pointer p){
-        super(p);
-        read();
-    }
 }

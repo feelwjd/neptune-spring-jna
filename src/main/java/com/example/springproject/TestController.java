@@ -32,19 +32,20 @@ public class TestController {
         if (shmid == -1 ){
             logger.info("shmget failed");
         }
-        //logger.info("step 1 : shmget success");
+        logger.info("step 1 : shmget success");
         Pointer shared_memory = ipc.shmat(shmid,Pointer.NULL,IPCLibrary.IPC_CREAT);
         IntByReference minus = new IntByReference(-1);
         if(shared_memory==minus.getPointer()){
             logger.info("shmat attach is failed");
         }
         logger.info("step 2 : shmat success");
-        CStuc stuc = new CStuc(shared_memory);
+        CStuc stuc = new CStuc();
+        stuc.useMemory(shared_memory);
         logger.info("step 3 : create structure");
-        String resume = stuc.getStr_ip();
+
         List<String> list = new ArrayList<>();
         list.add(stuc.getStr_ip());
-        logger.info("step 4");
+        logger.info("step 4 : shared_memory access");
         logger.info(String.valueOf(list));
         return list;
     }
