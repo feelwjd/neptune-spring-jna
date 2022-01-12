@@ -38,13 +38,13 @@ public class TestController {
         if(shared_memory==minus.getPointer()){
             logger.info("shmat attach is failed");
         }
-        //logger.info("step 2 : shmat success");
+        logger.info("step 2 : shmat success");
         CStuc stuc = new CStuc(shared_memory);
-        //logger.info("step 3 : create structure");
+        logger.info("step 3 : create structure");
         String resume = stuc.getStr_ip();
         List<String> list = new ArrayList<>();
         list.add(stuc.getStr_ip());
-        //logger.info("step 4");
+        logger.info("step 4");
         logger.info(String.valueOf(list));
         return list;
     }
