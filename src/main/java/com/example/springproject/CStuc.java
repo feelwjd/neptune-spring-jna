@@ -20,6 +20,7 @@ public class CStuc extends Structure {
 
     @Override
     public void useMemory(Pointer m){
+        super.allocateMemory();
         super.useMemory(m);
         super.read();
     }
