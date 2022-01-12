@@ -12,11 +12,6 @@ public class CStuc extends Structure {
     public int int_id;
 
     @Override
-    protected List<String> getFieldOrder() {
-        return Arrays.asList(new String[]{"str_ip","int_ip","int_id"});
-    }
-
-    @Override
     public void useMemory(Pointer m, int offset){
         super.useMemory(m, offset);
         super.read();
