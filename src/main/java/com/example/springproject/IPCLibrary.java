@@ -10,4 +10,5 @@ public interface IPCLibrary extends Library {
     void shmctl(int shmid, int ipcRmid, shmid_ds buf);
     int shmget(int key,int size,int shmflg);
     int shmdt(Pointer shmaddr);
+
 }

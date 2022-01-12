@@ -44,11 +44,9 @@ public class TestController {
         logger.info("step 3 : create structure");
 
         stuc.useMemory(shared_memory);
-        List<String> list = new ArrayList<>();
-        list.add(stuc.getStr_ip());
         logger.info("step 4 : shared_memory access");
-        logger.info(String.valueOf(list));
-        return list;
+        logger.info(String.valueOf(stuc));
+        return (List) stuc;
     }
 
 }
