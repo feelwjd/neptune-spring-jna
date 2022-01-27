@@ -40,13 +40,14 @@ public class TestController {
         }
         logger.info("step 2 : shmat success");
 
-        CStuc stuc = new CStuc(shared_memory);
+        CStuc stuc = new CStuc();
         logger.info("step 3 : create structure");
 
-        logger.info(stuc.getStr_ip());
+        CStuc.ByValue value = ipc.getStuc();
+        logger.info(String.valueOf(value));
         //logger.info("step 4 : shared_memory access");
         //logger.info(String.valueOf(stuc));
-        return (List) stuc;
+        return (List) value;
     }
 
 }
