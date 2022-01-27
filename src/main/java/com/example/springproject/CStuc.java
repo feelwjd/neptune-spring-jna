@@ -30,4 +30,27 @@ public class CStuc extends Structure {
         return super.getPointer();
     }
 
+    public String getStr_ip() {
+        return str_ip;
+    }
+
+    public void setStr_ip(String str_ip) {
+        this.str_ip = str_ip;
+    }
+
+    public int getInt_ip() {
+        return int_ip;
+    }
+
+    public void setInt_ip(int int_ip) {
+        this.int_ip = int_ip;
+    }
+
+    public int getInt_id() {
+        return int_id;
+    }
+
+    public void setInt_id(int int_id) {
+        this.int_id = int_id;
+    }
 }
