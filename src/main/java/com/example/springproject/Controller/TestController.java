@@ -1,7 +1,9 @@
-package com.example.springproject;
+package com.example.springproject.Controller;
+import com.example.springproject.Library.CMath;
+import com.example.springproject.Library.IPCLibrary;
+import com.example.springproject.Model.CStuc;
 import com.sun.jna.*;
 import com.sun.jna.ptr.IntByReference;
-import lombok.EqualsAndHashCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,9 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @Slf4j
@@ -43,7 +43,7 @@ public class TestController {
         CStuc stuc = new CStuc();
         logger.info("step 3 : create structure");
 
-        stuc.useMemory(shared_memory);
+        stuc.useMemory(shared_memory,1);
         logger.info("step 4 : shared_memory access");
         logger.info(String.valueOf(stuc));
         return (List) stuc;

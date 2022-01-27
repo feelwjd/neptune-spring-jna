@@ -1,7 +1,6 @@
-package com.example.springproject;
+package com.example.springproject.Library;
 
 import com.sun.jna.*;
-import java.util.List;
 
 public interface IPCLibrary extends Library {
     static int IPC_CREAT = 0666;

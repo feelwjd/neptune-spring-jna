@@ -1,4 +1,4 @@
-package com.example.springproject;
+package com.example.springproject.Library;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;

@@ -35,7 +35,7 @@ Native library (win32-x86-64/c.dll) not found in resource path (C:\Users\HT1\Ide
 	at com.sun.jna.Library$Handler.<init>(Library.java:192)
 	at com.sun.jna.Native.load(Native.java:596)
 	at com.sun.jna.Native.load(Native.java:570)
-	at com.example.springproject.TestController.test(TestController.java:30)
+	at com.example.springproject.Controller.TestController.test(TestController.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
