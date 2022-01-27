@@ -43,9 +43,9 @@ public class TestController {
         CStuc stuc = new CStuc();
         logger.info("step 3 : create structure");
 
-        stuc.useMemory(shared_memory,1);
-        logger.info("step 4 : shared_memory access");
-        logger.info(String.valueOf(stuc));
+        logger.info(stuc.getStr_ip());
+        //logger.info("step 4 : shared_memory access");
+        //logger.info(String.valueOf(stuc));
         return (List) stuc;
     }
 

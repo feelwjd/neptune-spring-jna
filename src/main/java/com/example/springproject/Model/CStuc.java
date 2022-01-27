@@ -11,19 +11,20 @@ public class CStuc extends Structure {
     public int int_ip;
     public int int_id;
 
-
-    @Override
-    public void useMemory(Pointer m, int offset){
-        super.useMemory(m, offset);
-        super.read();
+    public CStuc(){
+        super();
     }
 
-    @Override
-    public void useMemory(Pointer m){
-        super.allocateMemory();
-        super.useMemory(m);
-        super.read();
+    public CStuc(Pointer m){
+        super(m);
     }
+
+    public static class ByReference extends CStuc implements Structure.ByReference {
+    };
+
+    public static class ByValue extends CStuc implements Structure.ByValue {
+    };
+
 
     @Override
     public Pointer getPointer() {
