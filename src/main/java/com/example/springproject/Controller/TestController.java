@@ -40,7 +40,7 @@ public class TestController {
         }
         logger.info("step 2 : shmat success");
 
-        CStuc stuc = new CStuc();
+        CStuc stuc = new CStuc(shared_memory);
         logger.info("step 3 : create structure");
 
         logger.info(stuc.getStr_ip());
